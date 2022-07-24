@@ -22,6 +22,7 @@ public class MemberRepositoryV1 {
     }
 
     public Member save(Member member) throws SQLException {
+
         String sql = "insert into member(member_id, money) values (?, ?)";
 
         Connection con = null;
