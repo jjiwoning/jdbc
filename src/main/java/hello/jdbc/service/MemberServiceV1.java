@@ -18,6 +18,8 @@ public class MemberServiceV1 {
         memberRepository.update(fromId, fromMember.getMoney() - money);
         validation(toMember);
         memberRepository.update(toId, toMember.getMoney() + money);
+
+        //커밋, 롤백 선택해야된다.
     }
 
     private void validation(Member toMember) {
